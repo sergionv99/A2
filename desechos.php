@@ -13,10 +13,8 @@ if($name==$n && $pass==$c){
  //Si la condicion se cumple guardaremos los valores de los inputs en estas variables   
 $cookie_name=$_POST['name'];
 $cookie_pass=$_POST['contra'];
-$cookie_check=$_POST['check'];
 if(isset($_POST['check']) && $_POST['check']=='1'){
     //con setcookie establecemos las cookies ("nombre de la cokie", "valor de la cookie", fecha de expiracion donde se guardara
-    setcookie("checkb",$cookie_check,time()+60*60*24*365,"/");
     setcookie("nombre",$cookie_name,time()+60*60*24*365,"/");
     setcookie("contra",$cookie_pass,time()+60*60*24*365,"/");
 }
@@ -29,12 +27,19 @@ else{
    echo "<script type='text/javascript'>alert('ERROR DE AUTENTIFICACION')</script>";
 }
 }
-//Lo he hecho con un checkbox porque no enctroba manera de hacerlo con button
-   if(isset($_POST['borrar']) && $_POST['borrar'] == '1'){
+   
+
+ /*if (!empty($_POST["borrar"])) {
+            }
+                else {
+                   unset($_COOKIE['nombre']);
+                   unset($_COOKIE['contra']); 
+                    header ('Location:index.php');
+                }*/
+/*if(isset($_POST['borrar']) && $_POST['borrar'] == '1'){
        setcookie ("nombre","",time()-60*60*24*365,"/");
         setcookie("contra","",time()-60*60*24*365,"/");
+}*/
     /*unset($_COOKIE['nombre']);
-    unset($_COOKIE['contra']);*/
-    
-   }
+    unset($_COOKIE['contra']);}*/
     
