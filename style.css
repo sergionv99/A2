@@ -1,0 +1,33 @@
+body{
+    
+}
+section{
+    margin-top: 25vh;
+    margin-left:80vh;
+    height: 45vh;
+    width: 35vw;
+    border-color: black;
+    border: 1px solid;
+    
+}
+h1{
+    padding-top: 2.5vh;
+}
+article{
+    margin-left: 20vh;
+}
+#input1, #input2{
+    height: 4vh;
+    width: 12vw;
+    
+}
+#input1{
+    margin-left:7.9vh;
+    margin-bottom: 2vh;
+}
+#input2{
+    margin-left:5vh;
+}
+#input3{
+    margin-top:2vh;
+}
